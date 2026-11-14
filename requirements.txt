@@ -1,0 +1,6 @@
+stable-baselines3[extra]
+gymnasium[box2d]
+mujoco
+optuna
+matplotlib
+pandas
