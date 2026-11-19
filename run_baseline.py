@@ -3,7 +3,7 @@
 Runs sequentially. For parallel execution (recommended on a multi-core CPU),
 run individual `experiment.py` commands in separate terminals instead, e.g.:
 
-    py experiment.py --algo PPO --env LunarLanderContinuous-v2 --seed 0
+    py experiment.py --algo PPO --env LunarLanderContinuous-v3 --seed 0
 """
 import itertools
 import os

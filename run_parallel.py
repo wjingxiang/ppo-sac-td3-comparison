@@ -66,8 +66,9 @@ def main():
     ap.add_argument("--algos", nargs="*", default=config.ALGOS)
     ap.add_argument("--seeds", nargs="*", type=int, default=config.TRAIN_SEEDS)
     ap.add_argument("--workers", type=int, default=4)
-    ap.add_argument("--threads", type=int, default=8,
-                    help="torch/OpenBLAS threads per run (workers x threads <= logical cores)")
+    ap.add_argument("--threads", type=int, default=1,
+                    help="torch/OpenBLAS threads per run; 1 is fastest for these "
+                         "tiny MLPs (measured: 1 thread 112 steps/s vs 8 threads 105 steps/s)")
     args = ap.parse_args()
 
     runs = list(itertools.product(args.algos, [args.env], args.seeds))

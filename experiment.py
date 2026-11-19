@@ -7,9 +7,9 @@ This is the core "baseline" runner. It:
   4. saves the trained model.
 
 Usage (from this directory):
-    py experiment.py --algo PPO --env LunarLanderContinuous-v2 --seed 0
+    py experiment.py --algo PPO --env LunarLanderContinuous-v3 --seed 0
     py experiment.py --algo SAC --env HalfCheetah-v4 --seed 0
-    py experiment.py --algo TD3 --env LunarLanderContinuous-v2 --seed 0 --smoke   # 5000-step sanity check
+    py experiment.py --algo TD3 --env LunarLanderContinuous-v3 --seed 0 --smoke   # 5000-step sanity check
 """
 import argparse
 import csv

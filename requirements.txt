@@ -1,6 +1,12 @@
-stable-baselines3[extra]
-gymnasium[box2d]
-mujoco
-optuna
-matplotlib
-pandas
+# Core RL library
+stable-baselines3==2.9.2
+
+# Environments
+gymnasium[box2d]==1.4.0
+mujoco==4.0.1
+imageio==2.38.1
+
+# Hyperparameter tuning + analysis
+optuna==5.0.0
+matplotlib==3.11.0
+pandas==3.0.6
